@@ -1,0 +1,39 @@
+.fotoContainer{
+    height:fit-content;
+    width:fit-content;
+    border-radius: 100%;
+}
+
+.fotoImg{
+    height: 200px;
+    border-radius: 100%;
+    border: 1px solid rgba(175, 175, 175, 0.685);
+    box-shadow: 0px 0px 5px;
+}
+
+.centerContainer{
+    margin-top: 15%;
+}
+
+.conteinerTexto{
+    position: relative;
+    top:150px;
+    right: 10px;
+}
+
+.menuContainer{
+    margin-top: 15%;
+    position:relative;
+}
+
+.ConteinerQualidades{
+    animation-name: animacaoAparecer;
+    animation-duration: 1s;
+    animation-play-state:paused;
+    animation-iteration-count: 1;
+}
+
+@keyframes animacaoAparecer{
+    from{transform: translateY(-100px);visibility: hidden;color: rgba(1, 1, 1, 0)}
+    to{transform: translateY(0px);visibility: visible;}
+}

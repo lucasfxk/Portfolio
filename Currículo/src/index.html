@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <script>
+
+        function showBoxQualidades(){
+            
+            if(window.pageYOffset>=document.getElementById("boxQualidades").offsetTop-600){
+                document.getElementById("boxQualidades").style.animationPlayState = "running";    
+            }
+        }
+    </script>
+
+</head>
+<body onscroll="showBoxQualidades()">
+
+    <div class="container text-center conteinerTexto"><h1>Hi, I'm Lucas!</h1></div>
+    <!--CONTAINER PRINCIPAL-->
+    <div class="container-fluid row menuContainer" style="width: 100%;">
+        <div class="col row align-content-center justify-content-start">
+            <div class="bg-white" style="height: 100px; width: 50px;">
+                <model-viewer src="../assets/cubo.gltf" alt="Cubo" auto-rotate ar ios-src="../assets/cubo.gltf" style="height: 50px; width: 50px;"></model-viewer>
+            </div>
+        </div>
+
+        <div class="fotoContainer"><img src="../assets/fotoRosto2.jpg" alt="Foto" class="fotoImg col"></div>
+        
+        <div class="col row align-items-center justify-content-end">
+            <div class="bg-white" style="height: 100px; width: 50px;"></div>
+        </div>
+    </div>
+
+    <!--QUALIDADES-->
+    <div class="d-flex justify-content-evenly ConteinerQualidades" style="position: relative; margin-top: 20%;" id="boxQualidades">
+        <div class="text-start text-break ms-5 me-3" style="width: 33%;"><h1>Hello World</h1><br><p>O rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de RomaO rato roeu a roupa do  rei de Roma</p></div>
+        <div class="text-start text-break ms-5 me-3" style="width: 33%;"><h1>Hello World</h1><br><p>Olá tudo  bem com vocêOlá tudo  bem com vocêOlá tudo  bem com vocêOlá tudo  bem com você</p></div>
+        <div class="text-start text-break ms-5 me-3" style="width: 33%;"><h1>Hello World</h1><br><p></p></div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+</body>
+</html>
+
